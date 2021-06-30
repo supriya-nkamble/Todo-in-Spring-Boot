@@ -17,7 +17,7 @@ public class Todo {
 
     public Todo() {}
 
-    public Todo(String username, String task, Date dueDate, boolean completed) {
+    public Todo(String username, String task, Date dueDate, boolean isCompleted) {
         this.username = username;
         this.task = task;
         this.dueDate = dueDate;
