@@ -10,7 +10,7 @@ public class Todo {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    private String username;
+    private String userName;
     @Size(min=5, message= "please enter minimum 5 characters")
     private String task;
     private Date dueDate;
@@ -18,7 +18,7 @@ public class Todo {
     public Todo() {}
 
     public Todo(String username, String task, Date dueDate, boolean isCompleted) {
-        this.username = username;
+        this.userName = username;
         this.task = task;
         this.dueDate = dueDate;
     }
@@ -31,12 +31,12 @@ public class Todo {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUserName(String username) {
+        this.userName = username;
     }
 
     public String getTask() {
@@ -54,4 +54,5 @@ public class Todo {
     public void setDueDate(Date dueDate) {
         this.dueDate = dueDate;
     }
+
 }
